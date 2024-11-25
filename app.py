@@ -50,7 +50,7 @@ st.title("🍽️ Recipe Generator")
 st.markdown("<h3>Generate a recipe based on the ingredients you have!</h3>", unsafe_allow_html=True)
 
 user_ingred = st.text_input("Enter your ingredients (comma-separated):")
-dietary_options = st.selectbox("Dietary Preferences (Optional):", [None, "Vegetarian", "Vegan", "Gluten-Free"])
+dietary_options = st.selectbox("Dietary Preferences (Optional):", [None, "Vegetarian", "Non-Vegan", "Gluten-Free"])
 submit_button = st.button("Suggest me recipe")
 
 if submit_button:
